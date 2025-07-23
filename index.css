@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2️⃣ Set base font styles */
+html,body {
+    height: 100%;
+    width: 100%;
+ 
+}
+#box1{
+    height: 300px;
+    width: 300px;   
+    background-color: crimson;
+}
+
+#box2{
+    height: 300px;
+    width: 300px;   
+    background-color: rgb(83, 51, 130);
+}
+
+#box3{
+    height: 300px;
+    width: 300px;   
+    background-color: rgb(43, 220, 20);
+}
