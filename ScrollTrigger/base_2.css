@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+  color: white;
+}
+
+/* 2️⃣ Set base font styles */
+html,body {
+    height: 100%;
+    width: 100%;
+ 
+}
+
+
+#page1{
+    height:100%;
+    width:100%;
+    display: flex;
+    background-color: rgb(216, 240, 204);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+#page2{
+    height:100%;
+    width:100%;
+    display: flex;
+    background-color: rgb(241, 241, 102);
+    align-items: center;
+    justify-content: center;
+}
+
+
+#page3{
+    height:100%;
+    width:100%;
+    display: flex;
+    background-color: rgb(114, 230, 250);
+    align-items: center;
+    justify-content: center;
+}
+
+#circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(230, 173, 173), rgb(225, 65, 65));
+}

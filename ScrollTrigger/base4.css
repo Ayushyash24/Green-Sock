@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+  /* color: white; */
+}
+
+/* 2️⃣ Set base font styles */
+html,body {
+    height: 100%;
+    width: 100%;
+ 
+}
+body{
+    overflow-x: hidden; /* Horizontal overflow (scroller) ko hide karne ke liye */
+}
+
+
+#page1{
+    height:100%;
+    width:100%;
+    background-color: black;
+}
+
+
+#page2{
+    height:100%;
+    width:100%;
+    background-color: rgb(30, 72, 150);
+}
+
+
+#page3{
+    height:100%;
+    width:100%;
+    background-color: black;
+}
+
+
+#page2 h1 {
+    font-size: 40vw;        /* Heading ka size viewport width ke hisaab se set kiya gaya hai
+       
+    Text ko thoda bold dikhane ke liye 600 weight use kiya gaya hai 
+                            (400 = normal, 700 = bold) */
+    font-weight: 600;
+}

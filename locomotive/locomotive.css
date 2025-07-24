@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+  /* color: white; */
+}
+
+/* 2️⃣ Set base font styles */
+html,body {
+    height: 100%;
+    width: 100%;
+ 
+}
+
+#page1{
+    height: 100vh;   
+    width: 100%;
+    background-color: rgb(88, 176, 220);
+}
+
+
+#page2{
+    height: 100vh;   
+    width: 100%;
+    background-color: rgb(54, 130, 167);
+}
+
+
+#page3{
+    height: 100vh;   
+    width: 100%;
+    background-color: rgb(18, 52, 70);
+}
+
+
+#page2 #image-div{
+    height:100%;
+    width: 35%;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: crimson;
+    overflow: hidden;
+}
+
+#image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.4;
+}
