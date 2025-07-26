@@ -6,7 +6,8 @@
 // })
 
 
-var tl = gsap.timeline()
+function loadingAnimation(){
+    var tl = gsap.timeline()
 tl.from(".line h1",{
     y:350,
     stagger:0.25,
@@ -15,7 +16,7 @@ tl.from(".line h1",{
 })
 
 
-tl.from("#line1-part1 ",{
+tl.from("#line1-part1",{
     opacity:0,
     onStart:function(){
         var h5timer =document.querySelector("#line1-part1 h5");
@@ -59,5 +60,27 @@ tl.from("#page1",{
 
 
 tl.to("#loader",{
-    display:none,
+    display:"none",
 })
+}
+loadingAnimation()
+
+
+// document.addEventListener("mousemove",function(dets){
+//     gsap.to("#crsr",{
+//         left:dets.X,
+//         top:dets.Y,
+//          duration: 0.1,
+//         ease: "power1.out",
+//     })
+// })
+document.addEventListener("mousemove", function(dets){
+    gsap.to("#crsr", {
+        left: dets.clientX + "px",
+        top: dets.clientY + "px",
+        duration: 0.1,
+        ease: "power1.out"
+    });
+});
+
+Shery.makeMagnet("#nav-part2 h4" , {});
