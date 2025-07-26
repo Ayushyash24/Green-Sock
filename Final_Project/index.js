@@ -62,6 +62,11 @@ tl.from("#page1",{
 tl.to("#loader",{
     display:"none",
 })
+tl.from(".hero h1",{
+    y:120,
+    stagger:0.2,
+    
+})
 }
 loadingAnimation()
 
@@ -74,7 +79,10 @@ loadingAnimation()
 //         ease: "power1.out",
 //     })
 // })
-document.addEventListener("mousemove", function(dets){
+
+
+function cursorAnimation(){
+    document.addEventListener("mousemove", function(dets){
     gsap.to("#crsr", {
         left: dets.clientX + "px",
         top: dets.clientY + "px",
@@ -84,3 +92,6 @@ document.addEventListener("mousemove", function(dets){
 });
 
 Shery.makeMagnet("#nav-part2 h4" , {});
+}
+
+cursorAnimation()

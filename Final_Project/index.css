@@ -163,9 +163,11 @@ html,body {
 }
 
 .hero{
-    background-color: crimson;
+    /* background-color: crimson; */
     width: 72%;
     margin-left: 27%;
+    height: fit-content;
+    overflow: hidden;
 }
 
 .hero:nth-child(2){
