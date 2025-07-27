@@ -16,6 +16,10 @@ html,body {
  
 }
 
+body{
+    overflow-x: hidden;
+}
+
 #crsr{
     height: 2vw;
     width: 2vw;
@@ -271,8 +275,86 @@ html,body {
 }
 
 #page4{
-      min-height: 100vh;
-       position: relative;
+    min-height: 100vh;
+    position: relative;
     width: 100%;
-    background-color: rgb(164, 79, 79);
+    margin-left: 28%;
+    padding: top 5vh;
 }
+
+
+#page-4content{
+    width: 72vw;
+    position: relative;
+    /* margin-left: 28%; */
+
+}
+
+#page4-content h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    
+    
+}
+
+#page4-content .underline{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin: 5vw 0;
+}
+
+#page4-content>p{
+    font-size: 2.2vw;
+    width: 50%;
+    margin-bottom: 3vw;
+}
+
+
+#page4-flex{
+    display: flex;
+ 
+}
+
+#page4-flex img{
+    width: 38%;
+}
+
+#page4-flex p{
+    font-size: 0.9vw;
+    width: 20%;
+    margin-left: 1vw;
+}
+
+
+#page4-bluediv{
+    background-color: #3F7DF4;
+    width: 33vw;
+    padding: 4vw 2vw;
+    position: relative;
+    margin-top: -39vh;
+    margin-left: 26vw;
+}
+
+
+.blue-div-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.7vw 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.655);
+
+}
+
+
+.blue-div-elem h4{
+    font-size: 1.4vw;
+    font-weight: 500;
+
+}
+
+
+.blue-div-elem p {
+    width: 40%;
+    font-size: 0.7vw;
+} 
