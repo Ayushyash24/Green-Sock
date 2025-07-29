@@ -131,7 +131,17 @@ function cursorAnimation(){
 Shery.makeMagnet("#nav-part2 h4" , {});
 }
 
-// cursorAnimation()
+cursorAnimation()
 
 
 locomotiveAnimation();
+
+function sheryAnimation(){
+    Shery.imageEffect(".image-div",{
+        style:5,
+        debug:true,
+        gooey:true,
+    })
+}
+
+sheryAnimation();

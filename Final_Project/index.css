@@ -288,8 +288,10 @@ body{
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(87, 84, 84);
+    /* background-color: rgb(87, 84, 84); */
     position: relative;
+    padding-top: 17vh 2vw;
+    margin-bottom: 30vh;
 }
 
 #page3 h1{
@@ -297,13 +299,14 @@ body{
     text-transform: uppercase;
     margin-top: 10%;
     position: relative;
+    margin-left: 28vw;
     
     
 }
 
 
 #page3 h1:before{
-    content: "03";
+    content: "02";
     position: absolute;
     font-size: 3vw;
     font-weight: 100;
@@ -313,6 +316,29 @@ body{
 
 }
 
+#page3 .underline{
+    margin-left: 28vw;
+}
+#image-div-container {
+    background-color: crimson;
+    padding: 1vw;
+    position: relative;
+}
+
+.image-div{
+    height: 33vw;
+    position: relative;
+    overflow: hidden;
+    width: 24vw;
+    background-color: skyblue;
+}
+
+.image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
 
 
@@ -572,10 +598,9 @@ body{
     font-size: 1vw;
 }
 
-#page6{
-     min-height: 100vh;
-    width: 100%;
-    /* padding: 5vw 0; */
-    position: relative;
-    background-color: chocolate;
+
+
+.canvas_container{
+    z-index: 999999 !important;
+    pointer-events: none;
 }

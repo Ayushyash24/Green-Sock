@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obys Agency</title>
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="Shery.css" />
+    <!-- <link rel="stylesheet" href="Shery.css" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"/>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -69,7 +70,7 @@
                 <h1>Experience</h1>
             </div>
         </div>
-        <div id="page2" data-scroll data-scroll-speed="-1">
+        <div id="page2" data-scroll data-scroll-speed="-2.5">
            <div id="video-container">
             <div id="video-cursor">
                 <i class="ri-play-fill"></i>
@@ -78,8 +79,19 @@
              <video autoplay loop muted ><source src="https://obys.agency/wp-content/uploads/2024/12/Obys-Showreel-2024.mp4"></video>
            </div>
         </div>
-        <div id="page3"  data-scroll></div>
-        <div id="page4" data-scroll  >
+        <div id="page3"  data-scroll data-scroll-speed="0.3">
+            <h1>Our projects</h1>
+            <div class="underline"></div>
+            <div id="image-div-container">
+                <div class="image-div">
+                       <img src="https://images.unsplash.com/photo-1752805936031-b6b6db069190?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <img src="https://plus.unsplash.com/premium_photo-1752658399849-e8ccee68f204?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                 
+                </div>
+            </div>
+        
+        <div id="page4" data-scroll  data-scroll-speed="-2">
             <div id="page4-content">
                 <h1>About Obys</h1>
                 <div class="underline"></div>
@@ -183,7 +195,7 @@ FWA of The Day</p>
                  <div class="underline"></div>
             </div>
         </div>
-        <div id="page5" data-scroll>
+        <div id="page5" data-scroll data-scroll-speed="-2">
             <div class="elem">
                 <h1><span>Sport</span> - Fashion - Technology - </h1>
                  <h1><span>Sport</span> - Fashion - Technology - </h1>
@@ -204,7 +216,7 @@ P         </div>
        </div>
            
         </div>
-        <div id="footer" data-scroll>
+        <div id="footer" data-scroll data-scroll-speed="-2">
             <h1>Let's Create </h1>
             <div class="underline"></div>
             <div id="footer-div">
@@ -231,21 +243,12 @@ P         </div>
              <div class="underline"></div>
              <h5>Obys Agency © 2025 </h5>
            </div>
-
-           <div id="page6" data-scroll>
-            <div class="last-page">
-                <div id="last-elem">
-                    <h1>Thank you </h1>
-                    <h1>For </h1>
-                    <h1>Visiting</h1>
-                    <h1>US !</h1>
-                </div>
-            </div>
-           </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
     <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
     <script src="index.js"></script>
 </body>
