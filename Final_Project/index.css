@@ -62,7 +62,7 @@ body{
 }
 
 
-@keyframes anime {
+@keyframes loaderAnime {
     0%{
         font-family: "plain light";
         -webkit-text-stroke: 1px #fff;
@@ -543,10 +543,10 @@ body{
 
 }
 
-/* #footer>h5{
+#footer>h5{
     font-weight: 500;
     font-size: 1vw;
-} */
+}
 
 #page6{
      min-height: 100vh;
