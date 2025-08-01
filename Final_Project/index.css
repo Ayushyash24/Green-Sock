@@ -354,68 +354,154 @@ body{
     object-position: center;
     
 }
-
+.page3-circle1
+  {
+  height: 23vw;
+  width: 23vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 23vh;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
 .page3-circle1{
-    height: 23vw;
-    width: 23vw;
-    border: 2px solid #fff;
-    /* background-color: #fff; */
-    border-radius: 50%;
-    position: relative;
-     margin-top: 23vh;
-    display: flex;
-    align-items: center;
-    margin-left: 10vw;
-    justify-content: center;
+     margin-left: 10vw;
 }
 
-.page3-circle1 svg{
-    height: 30%;
+/* SVG icon */
+.page3-circle1 svg  {
+    position: absolute;
+  height: 60%;
+  top:40%;
+  left: 40%;
+  /* transform: translate(-50%, -50%);  */
+  transition: all 0.5s ease;
+    height: 100%;
+  width: 100%; /* optional if you want it to scale both ways */
+  object-fit: contain;
+  z-index: 2;
 }
 
-.page3-circle2{
-    height: 23vw;
-    width: 23vw;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    position: relative;
-     /* margin-top: 23vh; */
-    display: flex;
-    align-items: center;
-    /* margin-left: 10vw; */
-    justify-content: center;
+.page3-circle1:hover svg {
+  opacity: 0;
+  transform: scale(0.5);
 }
 
-.page3-circle2 svg{
+/* Inner circle */
+.circle-in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+  transform: scale(0);
+  z-index: 1;
+}
+
+/* .page3-circle2 svg{
     height: 30%;
     rotate: -45deg;
+} */
+
+
+.page3-circle1:hover .circle-in {
+  transform: scale(1);
 }
 
-.cricle-in{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    /* color: #000; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    scale: 0;
-    border-radius: 50%;
+/* Paragraph text inside circle */
+.circle-in p {
+  font-size: 1vw;
+  font-weight: 600;
+  width: 70%;
+  color: black;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.5s ease 0.2s; /* Delay to appear after scale */
 }
 
-.cricle-in p{
-    font-size: 0.95vw;
-    color: #000;
-    font-weight: 600;
-    width: 60%;
-    scale: 0;
-
-
-
+.page3-circle1:hover .circle-in p
+ {
+  opacity: 1;
+  transform: scale(1);
 }
+
+
+.page3-circle2 {
+  height: 23vw;
+  width: 23vw;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 3rem; 
+}
+
+.page3-circle2 svg {
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 2;
+  height: 30%;
+  transform: rotate(-45deg); /* Rotate the icon */
+}
+
+.page3-circle2:hover svg {
+  opacity: 0;
+  transform: scale(0.5);
+   /* Maintain rotation on hover */
+}
+
+/* Inner white circle */
+ .circle-in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.page3-circle2:hover .circle-in {
+  transform: scale(1);
+}
+ .circle-in p {
+  color: black;
+  font-size: 16px;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.4s ease 0.2s;
+  text-align: center;
+}
+
+.page3-circle2:hover .circle-in p {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
 
 #page4{
     min-height: 100vh;
